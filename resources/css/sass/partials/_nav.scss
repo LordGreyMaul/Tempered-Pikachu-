@@ -1,0 +1,10 @@
+.navbar-default {
+  background-color: $darkBlue;
+  border-color: $darkBlue;
+}
+.navbar-default .navbar-nav > li > a {
+  color: $pureWhite;
+  &:hover {
+  color: $pikachuYellow;
+  }
+}

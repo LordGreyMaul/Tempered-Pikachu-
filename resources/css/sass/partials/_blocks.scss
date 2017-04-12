@@ -1,8 +1,10 @@
-.box {
- padding: 50px 10px 50px 10px;
-}
-.navbar-right {
-  .form-control {
-   border-radius: 0;
-  }
+.splash {
+ padding: 150px 10px 50px 10px;
+
+ h2 {
+  color: $yellowShadow;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $darkBlue;
+  text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+ }
 }

@@ -3,7 +3,7 @@ $darkBlue: #3c5aa6;
 $yellowShadow: #c7a008;
 $lightBlue: #2a75bb;
 $pikachuYellow:#ffcb05;
-$pureWhite: #fffff;
+$pureWhite: #ffffff;
 
 //fonts
 @import url('https://fonts.googleapis.com/css?family=BioRhyme|Open+Sans');
@@ -13,7 +13,12 @@ $openSans: 'Open Sans', sans-serif;
 
 @import "partials/blocks";
 @import "partials/parallax";
+@import "partials/nav";
+@import "partials/buttons";
 
 body {
   font-family: $openSans;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: $bioRhyme;
 }

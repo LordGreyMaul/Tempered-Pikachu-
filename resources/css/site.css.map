@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAQQ,yEAAiE;ACRzE,IAAK;EACJ,OAAO,EAAE,mBAAmB;;AAG3B,2BAAc;EACb,aAAa,EAAE,CAAC;;ACLnB,gBAAiB;EACf,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,WAAW;;AFczB,IAAK;EACH,WAAW,EAPF,uBAAuB",
-"sources": ["sass/config.scss","sass/partials/_blocks.scss","sass/partials/_parallax.scss"],
+"mappings": "AAQQ,yEAAiE;ACRzE,OAAQ;EACP,OAAO,EAAE,oBAAoB;EAE7B,UAAG;IACF,KAAK,EDFQ,OAAO;ICGpB,yBAAyB,EAAE,GAAG;IAC9B,yBAAyB,EDLhB,OAAO;ICMhB,WAAW,EAAE,mBAAkC;;ACPjD,gBAAiB;EACf,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,WAAW;;ACFzB,eAAgB;EACd,gBAAgB,EHAP,OAAO;EGChB,YAAY,EHDH,OAAO;;AGGlB,oCAAqC;EACnC,KAAK,EHAK,OAAO;EGCjB,0CAAQ;IACR,KAAK,EHHQ,OAAO;;AIJtB,YAAa;EACX,KAAK,EAAE,IAAI;EACX,gBAAgB,EJEH,OAAO;EIDpB,YAAY,EJCC,OAAO;EIApB,kBAAQ;IACN,gBAAgB,EJHL,OAAO;IIIlB,YAAY,EJJD,OAAO;;AAgBtB,IAAK;EACH,WAAW,EATF,uBAAuB;;AAWlC,sBAAkB;EAChB,WAAW,EAbF,iBAAiB",
+"sources": ["sass/config.scss","sass/partials/_blocks.scss","sass/partials/_parallax.scss","sass/partials/_nav.scss","sass/partials/_buttons.scss"],
 "names": [],
 "file": "site.css"
 }

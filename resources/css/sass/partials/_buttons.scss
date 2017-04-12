@@ -1,0 +1,9 @@
+.btn-warning {
+  color: #fff;
+  background-color: $pikachuYellow;
+  border-color: $pikachuYellow;
+  &:hover {
+    background-color: $yellowShadow;
+    border-color: $yellowShadow;
+  }
+}

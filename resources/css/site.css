@@ -1,15 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=BioRhyme|Open+Sans");
-.box {
-  padding: 50px 10px 50px 10px; }
-
-.navbar-right .form-control {
-  border-radius: 0; }
+.splash {
+  padding: 150px 10px 50px 10px; }
+  .splash h2 {
+    color: #c7a008;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #3c5aa6;
+    text-shadow: 3px 3px 2px #969696; }
 
 .parallax-window {
   min-height: 600px;
   background: transparent; }
 
+.navbar-default {
+  background-color: #3c5aa6;
+  border-color: #3c5aa6; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff; }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #ffcb05; }
+
+.btn-warning {
+  color: #fff;
+  background-color: #ffcb05;
+  border-color: #ffcb05; }
+  .btn-warning:hover {
+    background-color: #c7a008;
+    border-color: #c7a008; }
+
 body {
   font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "BioRhyme", serif; }
 
 /*# sourceMappingURL=site.css.map */
