@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=BioRhyme|Open+Sans");
+.box {
+  padding: 50px 10px 50px 10px; }
+
+.navbar-right .form-control {
+  border-radius: 0; }
+
+.parallax-window {
+  min-height: 600px;
+  background: transparent; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+/*# sourceMappingURL=site.css.map */

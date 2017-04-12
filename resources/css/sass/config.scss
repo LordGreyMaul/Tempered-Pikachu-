@@ -1,0 +1,19 @@
+// Colours
+$darkBlue: #3c5aa6;
+$yellowShadow: #c7a008;
+$lightBlue: #2a75bb;
+$pikachuYellow:#ffcb05;
+$pureWhite: #fffff;
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=BioRhyme|Open+Sans');
+$bioRhyme: 'BioRhyme', serif;
+$openSans: 'Open Sans', sans-serif;
+
+
+@import "partials/blocks";
+@import "partials/parallax";
+
+body {
+  font-family: $openSans;
+}

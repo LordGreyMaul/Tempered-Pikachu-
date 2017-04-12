@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQQ,yEAAiE;ACRzE,IAAK;EACJ,OAAO,EAAE,mBAAmB;;AAG3B,2BAAc;EACb,aAAa,EAAE,CAAC;;ACLnB,gBAAiB;EACf,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,WAAW;;AFczB,IAAK;EACH,WAAW,EAPF,uBAAuB",
+"sources": ["sass/config.scss","sass/partials/_blocks.scss","sass/partials/_parallax.scss"],
+"names": [],
+"file": "site.css"
+}

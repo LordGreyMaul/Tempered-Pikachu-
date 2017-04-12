@@ -1,38 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Contains all header information to opening body tag -->
+<?php include('main/head.php');?>
 
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Tempered Sword | A PHP Framework</title>
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-		  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<style>
-	h1
-	{
-	font-size: 100px;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	}
-</style>
-</head>
-<body>
+<!-- Fixed top nav -->
+<?php include('partials/nav.php'); ?>
+<!-- Page Content -->
 <div class="container">
-	<?php include('partials/nav.php'); ?>
-	<div class="row">
+	<div class="row box">
 		<div class="col-md-12 text-center">
-			<h1>Tempered Sword</h1>
-			<p>A simple little framework</p>
+			<img src="/resources/img/logo.png" alt="Og Pokemon" class="center-block img-responsive">
+			<p>A simple to use tool for finding all those Pokemon Cards</p>
 		</div>
 	</div>
 </div>
-<!--<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-<!--<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--<script src="js/bootstrap.min.js"></script>-->
-</body>
-</html>
+<div class="parallax-window" data-parallax="scroll" data-image-src="/resources/img/background1.jpg"></div>
+<!-- End of Page Content -->
+
+<!-- Script locations and closing tags -->
+<?php include('main/footer.php');?>
+
 
