@@ -3,5 +3,8 @@
     "classmap": [
       "./"
     ]
+  },
+  "require": {
+    "pokemon-tcg/pokemon-tcg-sdk-php": "^1.0"
   }
 }
