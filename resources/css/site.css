@@ -58,6 +58,11 @@
     background-color: #c7a008;
     border-color: #c7a008; }
 
+.footer {
+  background: #3c5aa6;
+  color: white;
+  padding: 20px; }
+
 body {
   font-family: "Open Sans", sans-serif; }
 
