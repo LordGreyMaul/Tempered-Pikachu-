@@ -2,4 +2,12 @@
   background: $darkBlue;
   color: white;
   padding: 20px;
+
+  a {
+    color: $pikachuYellow;
+    &:hover {
+      color: $yellowShadow;
+      text-decoration: none;
+    }
+  }
 }

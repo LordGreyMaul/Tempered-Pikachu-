@@ -48,10 +48,10 @@
 		<div class="row box">
 			<div class="col-md-12 text-center">
 				<h1>Search for your Pokemon</h1>
-				<form style="margin-top: 45px;">
+				<form method="post" action="search" style="margin-top: 45px;">
 					<div class="col-md-10">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
+							<input type="text" name="searchterm" id="searchterm" class="form-control" placeholder="Search by name">
 						</div>
 					</div>
 					<div class="col-md-2">
@@ -74,7 +74,7 @@
 					<div class="caption">
 						<h3>All Pokemon</h3>
 						<p>Every single Pokemon at the click of a button</p>
-						<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+						<p><a href="#" class="btn btn-primary" role="button">Search</a></p>
 					</div>
 				</div>
 			</div>
@@ -82,9 +82,9 @@
 				<div class="thumbnail" style="background: none; border: none">
 					<img src="/resources/img/icon3.png" alt="Charmander OG pokemon | All Pokemon">
 					<div class="caption">
-						<h3>All Pokemon</h3>
-						<p>Every single Pokemon at the click of a button</p>
-						<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+						<h3>Shop Pokemon</h3>
+						<p>Grab cards and boosters from our store</p>
+						<p><a href="http://www.ogpokemon.com" class="btn btn-primary" role="button">Shop</a></p>
 					</div>
 				</div>
 			</div>
@@ -92,9 +92,9 @@
 				<div class="thumbnail" style="background: none; border: none">
 					<img src="/resources/img/icon4.png" alt="Charmander OG pokemon | All Pokemon">
 					<div class="caption">
-						<h3>All Pokemon</h3>
-						<p>Every single Pokemon at the click of a button</p>
-						<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+						<h3>Read Pokemon</h3>
+						<p>Check out our blog for news and more</p>
+						<p><a href="#" class="btn btn-primary" role="button">Blog</a></p>
 					</div>
 				</div>
 			</div>
@@ -102,9 +102,9 @@
 				<div class="thumbnail" style="background: none; border: none">
 					<img src="/resources/img/icon2.png" alt="Charmander OG pokemon | All Pokemon">
 					<div class="caption">
-						<h3>All Pokemon</h3>
-						<p>Every single Pokemon at the click of a button</p>
-						<p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+						<h3>Play Pokemon</h3>
+						<p>Play the online TCG game and Catch em all!</p>
+						<p><a href="http://www.pokemon.com/uk/pokemon-tcg/" target="_blank" class="btn btn-primary" role="button">Play</a></p>
 					</div>
 				</div>
 			</div>
