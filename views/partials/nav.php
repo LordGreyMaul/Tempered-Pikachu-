@@ -18,15 +18,27 @@
                 <li><a href="/about">About</a></li>
                 <li><a href="#">Sets</a></li>
                 <li><a href="#">History</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">TCG PokeBox</a></li>
+                <li><a href="#">Store</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <form class="navbar-form navbar-right" method="post" action="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" name="searchterm" id="searchterm" placeholder="Search by name">
-                </div>
-                <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span></button>
-            </form>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li>
+                        <form class="navbar-form " method="post" action="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="searchterm" id="searchterm" placeholder="Search by name">
+                            </div>
+                            <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span></button>
+                        </form>
+                    </li>
+                </ul>
 
+        </div>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>

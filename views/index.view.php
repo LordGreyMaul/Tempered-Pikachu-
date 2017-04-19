@@ -11,7 +11,7 @@
 		<div class="row splash">
 			<div class="col-md-12 text-center">
 				<img src="/resources/img/logo.png" alt="Og Pokemon" class="center-block img-responsive">
-				<h2>A simple to use tool for finding all Pokemon Cards</h2>
+				<h2>Your one stop shop for all your Pokemon TCG Needs</h2>
 			</div>
 		</div>
 	</div>
@@ -115,6 +115,16 @@
 
 <!-- Parallax Image -->
 <div class="parallax-window" data-parallax="scroll" data-image-src="/resources/img/background3.jpg">
+	<div class="container">
+		<div class="row boxinverse">
+			<div class="col-md-12">
+				<h1>The OG Pokemon TCG PokeBox</h1>
+				<p>Fancy a monthly subscription box full of boosters and gifts? Of course you do and that's why we have designed one and put a very limited number of them together.</p>
+				<p>You can have 4x Booster packs plus extra gifts including deck boxes, Card sleeves and annuals all at your finger tips every month to help you catch em all.</p>
+				<button class="btn btn-lg btn-primary">Learn More</button>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- End of Parallax image -->
 

@@ -13,6 +13,7 @@
  h2, h3 {
   color: $lightBlue;
  }
+
  .thumbnail {
   border: none;
   background: none;
@@ -43,3 +44,14 @@
   width: 100%;
  }
 }
+.boxinverse {
+ padding: 150px 10px 150px 10px;
+ color: white;
+ h1 {
+  color: $pikachuYellow;
+ }
+ h2, h3 {
+  color: $pikachuYellow;
+ }
+}
+

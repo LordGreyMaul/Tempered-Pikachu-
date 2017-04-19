@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tempered Sword | A PHP Framework</title>
+    <title>OG Pokemon | The Perfect tool for all your pokemon TCG Needs</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="/resources/css/bootstrap.css" crossorigin="anonymous">

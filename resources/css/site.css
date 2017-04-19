@@ -37,6 +37,14 @@
     height: 65px;
     width: 100%; }
 
+.boxinverse {
+  padding: 150px 10px 150px 10px;
+  color: white; }
+  .boxinverse h1 {
+    color: #ffcb05; }
+  .boxinverse h2, .boxinverse h3 {
+    color: #ffcb05; }
+
 .parallax-window {
   min-height: 600px;
   background: transparent; }
