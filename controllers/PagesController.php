@@ -20,6 +20,11 @@ class PagesController
         return view('about');
     }
 
+    public function history()
+        {
+            return view('history');
+        }
+
     public function search()
     {
         $search = Pokemon::Card()->where(['name' => $_POST['searchterm']])->all();
