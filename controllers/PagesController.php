@@ -15,6 +15,12 @@ class PagesController
          return view('index', compact('cards'));
     }
 
+    public function card()
+    {
+        $card = Pokemon::Card()->find($_POST['id']);
+        return view('card', compact('card'));
+    }
+
     public function about()
     {
         return view('about');
@@ -29,5 +35,17 @@ class PagesController
     {
         $search = Pokemon::Card()->where(['name' => $_POST['searchterm']])->all();
         return view('search', compact('search'));
+    }
+
+    public function sets()
+    {
+        $sets = Pokemon::Set()->all();
+        return view('sets', compact('sets'));
+    }
+
+    public function singleSet()
+    {
+        $cards = Pokemon::Card()->where(['set' => $_POST['id']])->all();
+        return view('singleset' , compact('cards'));
     }
 }

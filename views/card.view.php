@@ -5,7 +5,7 @@
 <!-- Page Content -->
 
 <!-- Splash -->
-<div class="parallax-window" data-parallax="scroll" data-image-src="/resources/img/background5.jpg">
+<div class="parallax-window" data-parallax="scroll" data-image-src="/resources/img/background7.jpg">
     <div class="container">
         <div class="row splash">
             <div class="col-md-12 text-center">
@@ -19,35 +19,47 @@
 
 <!-- Page Content -->
 
-<!-- History section -->
+<!-- Card section -->
 <div class="container">
     <div class="row box">
         <div class="col-md-12">
             <div class="col-md-8">
-                <h1>Pokemon a History</h1>
-                <p>Pokemon is a huge franchise managed by the Pokemon Company, a Japanese consortium between Nintendo, Game freak and Creatures.
-                The franchise was created by Satoshi Tajiri back in 1995 and the whole world centered on 'Pokemon', which trainers catch and train to
-                win battles in leagues around the world.</p>
-                <p>We also want to bring you news and reviews for many games, products and the very popular Pokemon Go
-                    mobile game. So if your looking for somewhere to catch em all and have some fun! You have come to the
-                    right place….</p>
-                <p>So if you ever need a card but not sure which version or from what set to take it? Be it a Steam Siege
-                    Machamp or the Sun and Moon version, this site will give you the tools to work out which one not only
-                    looks better but also which one will player better.</p>
-                <p>This whole site is free to use and enjoy. So good luck trainers and welcome to the OG Pokedex!
-                    We hope you enjoy your stay and should you find any issues or troubles whilst browsing
-                    the site please get in touch. Now go catch em all!</p>
+                <div class="col-md-8">
+                    <img src="<?= $card->getImageUrl(); ?>" alt="<?= $card->getName(); ?>"
+                         class="img-responsive">
+                </div>
+                <div class="col-md-4">
+                    <h4><b>SubType: </b><?= $card->getSubtype(); ?></h4>
+                    <h4><b>SuperType: </b><?= $card->getSupertype(); ?></h4>
+                    <h4><b>Set:</b> <?= $card->getSet() ?></h4>
+                    <h4><b>Artist: </b><?= $card->getArtist() ?></h4>
+                    <h4><b>National Pokedex Number: </b><?= $card->getNationalPokedexNumber() ?></h4>
+                    <h4><b>Set Code: </b><?= $card->getSetCode(); ?></h4>
+                    <h4><b>Series: </b><?= $card->getSeries(); ?></h4>
+                    <h4><b>Rarity: </b><?= $card->getRarity(); ?></h4>
+                </div>
+                <hr>
             </div>
             <div class="col-md-4">
-                <img src="/resources/img/jolhistory.png" class="img-responsive" alt="">
+                <?php include ('partials/sidebar.php');?>
             </div>
         </div>
     </div>
 </div>
-<!-- End of About section -->
+<!-- End of Card section -->
 
 <!-- Parallax Image -->
-<div class="parallax-window" data-parallax="scroll" data-image-src="/resources/img/aboutbg1.jpg">
+<div class="parallax-window" data-parallax="scroll" data-image-src="/resources/img/background3.jpg">
+    <div class="container">
+        <div class="row boxinverse">
+            <div class="col-md-12">
+                <h1>The OG Pokemon TCG PokeBox</h1>
+                <p>Fancy a monthly subscription box full of boosters and gifts? Of course you do and that's why we have designed one and put a very limited number of them together.</p>
+                <p>You can have 4x Booster packs plus extra gifts including deck boxes, Card sleeves and annuals all at your finger tips every month to help you catch em all.</p>
+                <a href="http://ogpokemon.com/og-tcg-pokebox/" target="_blank" class="btn btn-lg btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- End of Parallax image -->
 
