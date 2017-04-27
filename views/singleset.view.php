@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row splash">
             <div class="col-md-12 text-center">
-                <img src="/resources/img/about.png" alt="Og Pokemon" class="center-block img-responsive">
+                <img src="/resources/img/single.png" alt="Og Pokemon" class="center-block img-responsive">
                 <h2>A simple to use tool for finding all Pokemon Cards</h2>
             </div>
         </div>
@@ -25,7 +25,7 @@
         <div class="col-md-12">
             <?php foreach ($cards as $set) : ?>
                 <div class="col-md-2">
-                    <div class="thumbnail" style="min-height: 525px;">
+                    <div class="thumbnail" style="min-height: 575px;">
                         <img src="<?= $set->getImageUrl(); ?>" alt="<?= $set->getName(); ?>"
                              class="img-responsive">
                         <div class="caption">

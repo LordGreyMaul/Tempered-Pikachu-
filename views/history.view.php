@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row splash">
             <div class="col-md-12 text-center">
-                <img src="/resources/img/about.png" alt="Og Pokemon" class="center-block img-responsive">
+                <img src="/resources/img/history.png" alt="Og Pokemon" class="center-block img-responsive">
                 <h2>A simple to use tool for finding all Pokemon Cards</h2>
             </div>
         </div>

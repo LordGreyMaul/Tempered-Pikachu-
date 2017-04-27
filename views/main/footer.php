@@ -20,7 +20,7 @@
             <div class="col-md-12">
                 <hr>
                 <div class="col-md-6">
-                    <p>Copyright &#169; <?= DATE('Y'); ?> OG Pokemon | All Images are owned by there respective owners</p>
+                    <p>Copyright &#169; <?= DATE('Y'); ?> OG Pokemon | All Images are owned by their respective owners</p>
                 </div>
                 <div class="col-md-6 text-right">
                     <p>Designed and built by <a href="http://www.grahammorby-raybould.info" target="_blank">Graham Morby-Raybould</a></p>
