@@ -25,15 +25,27 @@
             </ul>
             <div class="navbar-right">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">
+                                    <form class="navbar-form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Password">
+                                        </div>
+                                        <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span></button>
+                                    </form>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="register">Register</a></li>
+                    <li><a href="cart">View Cart</a></li>
+                    <li><a href="#">Checkout</a></li>
                     <li>
-                        <form class="navbar-form " method="post" action="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="searchterm" id="searchterm" placeholder="Search by name">
-                            </div>
-                            <button type="submit" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span></button>
-                        </form>
+
                     </li>
                 </ul>
 

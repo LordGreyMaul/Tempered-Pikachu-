@@ -51,8 +51,15 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td>Shipping:</td>
+                    <td><b>£5.83</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td>Total:</td>
-                    <td><b>£239.83</b></td>
+                    <td><b>£245.83</b></td>
                 </tr>
                 <tr>
                     <td></td>

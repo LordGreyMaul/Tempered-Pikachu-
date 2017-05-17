@@ -111,15 +111,35 @@
             <!-- End of main products -->
             <!-- Sidebar -->
             <div class="col-md-4">
-                <h3>Categories</h3>
-                <ul>
-                    <li><a href="#">Pokemon Boosters</a></li>
-                    <li><a href="#">Pokemon Booster Boxes</a></li>
-                    <li><a href="#">Pokemon Theme Decks</a></li>
-                    <li><a href="#">Pokemon EX & GX boxes</a></li>
-                    <li><a href="#">Pokemon Single Cards</a></li>
-                    <li><a href="#">Pokemon Accessories</a></li>
-                </ul>
+                <div class="sidebar" style="margin-top: 75px;">
+                    <h3><span class="glyphicon glyphicon-shopping-cart"> </span> Cart</h3>
+                    <p>You have 4 Items in your cart</p>
+                    <p><span>Total:</span> £254.93</p>
+                    <a href="#" class="btn btn-success">Checkout now</a>
+                    <hr>
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Pokemon Boosters</a></li>
+                        <li><a href="#">Pokemon Booster Boxes</a></li>
+                        <li><a href="#">Pokemon Theme Decks</a></li>
+                        <li><a href="#">Pokemon EX & GX boxes</a></li>
+                        <li><a href="#">Pokemon Single Cards</a></li>
+                        <li><a href="#">Pokemon Accessories</a></li>
+                    </ul>
+                    <hr>
+                    <h3>Featured Product</h3>
+                    <div class="product-chooser-item">
+                        <img src="http://renswijnmalen.nl/bootstrap/desktop_mobile.png" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile and Desktop">
+                        <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
+                            <h3 class="title">Mobile and Desktop</h3>
+                            <h4>£19.99</h4>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                Cum sociis natoque sem.</p>
+                            <button class="price btn btn-warning"><span class="glyphicon glyphicon-shopping-cart"> </span> Add to cart</button>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
             </div>
             <!-- End of sidebar -->
     </div>
