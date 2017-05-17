@@ -25,6 +25,8 @@
             </ul>
             <div class="navbar-right">
                 <ul class="nav navbar-nav">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
                     <li>
                         <form class="navbar-form " method="post" action="search">
                             <div class="form-group">
