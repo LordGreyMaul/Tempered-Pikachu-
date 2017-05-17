@@ -3,9 +3,16 @@ namespace App\Controllers;
 
 class StoreController
 {
+    // Store index
     public function store()
     {
-        echo "Hello World";
+        return view('storeHome');
+    }
+
+    //Cart Page
+    public function cart()
+    {
+        return view('cart');
     }
 
 }

@@ -12,3 +12,4 @@ $router->post('singleset', 'PagesController@singleSet');
 
 //Store Routes
 $router->get('store', 'StoreController@store');
+$router->get('cart', 'StoreController@cart');
