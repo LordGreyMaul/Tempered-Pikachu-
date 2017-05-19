@@ -19,3 +19,6 @@ $router->get('store', 'StoreController@store');
 $router->get('cart', 'StoreController@cart');
 $router->post('charge', 'StoreController@charge');
 $router->get('checkOut', 'StoreController@checkOut');
+
+//Admin
+$router->get('toxapex', 'AdminController@index');
