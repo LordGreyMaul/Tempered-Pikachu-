@@ -12,6 +12,7 @@ $router->post('singleset', 'PagesController@singleSet');
 
 //User Pages
 $router->get('register', 'UsersController@register');
+$router->get('myaccount', 'UsersController@myAccount');
 
 //Store Routes
 $router->get('store', 'StoreController@store');
