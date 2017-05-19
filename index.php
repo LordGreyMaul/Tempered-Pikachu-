@@ -1,7 +1,7 @@
 <?php
 
 require 'vendor/autoload.php';
-require 'core/bootstrap.php';
+require 'bootstrap.php';
 
 use App\Core\Config;
 use App\Core\Router;

@@ -13,7 +13,7 @@ use App\Core\App;
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 
-$paths = array("/Users/scott/temperedpikachu/src");
+$paths = array(__DIR__."/src");
 $isDevMode = true;
 
 // the connection configuration
@@ -22,10 +22,11 @@ $dbParams = array(
     'user' => 'root',
     'password' => 'root',
     'host' => 'localhost',
-    'driver' => 'pdo_mysql',
+    'unix_socket' => '/Applications/MAMP/tmp/mysql/mysql.sock',
+    'driver' => 'pdo_mysql'
 );
 
-$config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode);
+$config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode, null, null, false);
 $entityManager = EntityManager::create($dbParams, $config);
 
 function view($name, $data=[])
