@@ -5,6 +5,7 @@
     ]
   },
   "require": {
-    "pokemon-tcg/pokemon-tcg-sdk-php": "^1.0"
+    "pokemon-tcg/pokemon-tcg-sdk-php": "^1.0",
+    "stripe/stripe-php": "^4.9"
   }
 }

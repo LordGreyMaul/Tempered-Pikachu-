@@ -1,9 +1,9 @@
 <?php
 
+use App\Core\Config;
 
-
-return [
-    'database' => [
+Config::defaults([
+        'database' => [
         'name' => 'ogpokedex',
         'username' => 'root',
         'password' => 'root',
@@ -13,8 +13,8 @@ return [
         ]
     ],
     'stripe' => [
-        "secret_key" => "sk_test_BQokikJOvBiI2HlWgH4olfQ2",
-        "publishable_key" => "pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+        "secret_key" => "",
+        "publishable_key" => ""
     ]
+]);
 
-];

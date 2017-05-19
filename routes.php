@@ -1,6 +1,6 @@
 <?php
 
-
+/* @var $router \App\Core\Router*/
 // Main Pages
 $router->get('', 'PagesController@index');
 $router->get('about', 'PagesController@about');
@@ -16,3 +16,5 @@ $router->get('register', 'UsersController@register');
 //Store Routes
 $router->get('store', 'StoreController@store');
 $router->get('cart', 'StoreController@cart');
+$router->post('charge', 'StoreController@charge');
+$router->get('checkOut', 'StoreController@checkOut');

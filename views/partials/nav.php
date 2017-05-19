@@ -43,7 +43,7 @@
                     </li>
                     <li><a href="register">Register</a></li>
                     <li><a href="cart">View Cart</a></li>
-                    <li><a href="#">Checkout</a></li>
+                    <li><a href="checkOut">Checkout</a></li>
                     <li>
 
                     </li>
