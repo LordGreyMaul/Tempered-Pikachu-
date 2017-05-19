@@ -8,4 +8,9 @@ class UsersController {
         return view('register');
     }
 
+    public function myAccount()
+    {
+        return view('myAccount');
+    }
+
 }

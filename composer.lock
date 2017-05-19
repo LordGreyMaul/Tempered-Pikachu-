@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "f6ea5158e572070b7e13047d59647d99",
     "content-hash": "9872ae32c47252affc9a1fd29566f1bb",
     "packages": [
         {
@@ -71,7 +72,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2015-11-06T14:35:42+00:00"
+            "time": "2015-11-06 14:35:42"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -133,7 +134,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2017-02-28T22:50:30+00:00"
+            "time": "2017-02-28 22:50:30"
         },
         {
             "name": "guzzlehttp/promises",
@@ -184,7 +185,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-12-20T10:07:11+00:00"
+            "time": "2016-12-20 10:07:11"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -249,7 +250,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-03-20T17:10:46+00:00"
+            "time": "2017-03-20 17:10:46"
         },
         {
             "name": "pokemon-tcg/pokemon-tcg-sdk-php",
@@ -300,7 +301,7 @@
                 "sdk",
                 "tcg"
             ],
-            "time": "2016-09-20T02:24:29+00:00"
+            "time": "2016-09-20 02:24:29"
         },
         {
             "name": "psr/http-message",
@@ -350,7 +351,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "stripe/stripe-php",
@@ -405,7 +406,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2017-05-10T18:53:00+00:00"
+            "time": "2017-05-10 18:53:00"
         }
     ],
     "packages-dev": [],
