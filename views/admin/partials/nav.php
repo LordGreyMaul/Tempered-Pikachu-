@@ -16,9 +16,9 @@
             </a>
         </li>
         <hr>
-        <li><p>Blog</p></li>
+        <li><a href="blogs">Blogs</a></li>
         <li>
-            <a href="#">Add New Blog</a>
+            <a href="addblog">Add New Blog</a>
         </li>
         <li>
             <a href="#">Edit new Blog</a>
