@@ -38,4 +38,13 @@ class StoreController
         echo '<h1>Successfully charged $50.00!</h1>';
     }
 
+    public function addProductToCart()
+    {
+
+    }
+
+    public function removeProductFromCart()
+    {
+
+    }
 }

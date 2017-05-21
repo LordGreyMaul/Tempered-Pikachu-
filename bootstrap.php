@@ -10,24 +10,18 @@ use App\Core\App;
 
 // bootstrap.php
 
+use App\Core\Config;
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
+
+require'_config.local.php';
 
 $paths = array(__DIR__."/src");
 $isDevMode = true;
 
-// the connection configuration
-$dbParams = array(
-    'dbname' => 'ogpokemon',
-    'user' => 'root',
-    'password' => 'root',
-    'host' => 'localhost',
-    'unix_socket' => '/Applications/MAMP/tmp/mysql/mysql.sock',
-    'driver' => 'pdo_mysql'
-);
 
 $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode, null, null, false);
-$entityManager = EntityManager::create($dbParams, $config);
+$entityManager = EntityManager::create(Config::get('database'), $config);
 
 function view($name, $data=[])
 {

@@ -4,13 +4,12 @@ use App\Core\Config;
 
 Config::local([
     'database' => [
-        'name' => 'ogpokedex',
-        'username' => 'root',
+        'dbname' => 'ogdatabase',
+        'user' => 'root',
         'password' => 'root',
-        'connection' => 'mysql:host=localhost',
-        'options' => [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-        ]
+        'host' => 'localhost',
+        'unix_socket' => '/Applications/MAMP/tmp/mysql/mysql.sock',
+        'driver' => 'pdo_mysql'
     ],
     'stripe' => [
         "secret_key" => "sk_test_3cvqLoOKJ2DI81VihJmbumIn",
