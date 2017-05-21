@@ -22,3 +22,5 @@ $router->get('checkOut', 'StoreController@checkOut');
 
 //Admin
 $router->get('toxapex', 'AdminController@index');
+$router->get('toxapex/blogs', 'AdminController@blog');
+$router->get('toxapex/addblog', 'AdminController@addblog');
