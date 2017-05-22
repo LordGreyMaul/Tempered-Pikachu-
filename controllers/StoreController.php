@@ -49,8 +49,17 @@ class StoreController
         /** @var \Doctrine\ORM\EntityManager $em */
         $em = App::getEntityManager();
 
-        $product = $em->find('products', $_POST['product_id'] );
-        $order = $em->find('orders', $_POST['order_id'] );
+        /** How do we know the user? we probably don't want it posted. It would be good to have a user class that gets the current user with sessions?*/
+        $account = $em->find('accounts', $_POST['account_id']);
+
+        // No user found, inform view
+        if(!$account )
+        {
+            return view('search', compact('search'));
+        }
+
+        $product = $em->find('products', $_POST['product_id']);
+        $order = $em->find('orders', $_POST['order_id']);
 
         if(!isset($order))
         {

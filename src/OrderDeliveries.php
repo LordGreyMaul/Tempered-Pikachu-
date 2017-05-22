@@ -5,12 +5,12 @@
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Orderdeliveries
+ * OrderDeliveries
  *
  * @ORM\Table(name="orderDeliveries")
  * @ORM\Entity
  */
-class Orderdeliveries
+class OrderDeliveries
 {
     /**
      * @var integer
@@ -42,6 +42,13 @@ class Orderdeliveries
      */
     private $status;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="trackingNumber", type="string", length=255, nullable=true)
+     */
+    private $trackingNumber;
+
 
 
     /**
@@ -58,7 +65,7 @@ class Orderdeliveries
      * Set orderid
      *
      * @param integer $orderid
-     * @return Orderdeliveries
+     * @return OrderDeliveries
      */
     public function setOrderid($orderid)
     {
@@ -81,7 +88,7 @@ class Orderdeliveries
      * Set dateadded
      *
      * @param \DateTime $dateadded
-     * @return Orderdeliveries
+     * @return OrderDeliveries
      */
     public function setDateadded($dateadded)
     {
@@ -104,7 +111,7 @@ class Orderdeliveries
      * Set status
      *
      * @param integer $status
-     * @return Orderdeliveries
+     * @return OrderDeliveries
      */
     public function setStatus($status)
     {
@@ -121,5 +128,28 @@ class Orderdeliveries
     public function getStatus()
     {
         return $this->status;
+    }
+
+    /**
+     * Set trackingNumber
+     *
+     * @param string $trackingNumber
+     * @return OrderDeliveries
+     */
+    public function setTrackingNumber($trackingNumber)
+    {
+        $this->trackingNumber = $trackingNumber;
+
+        return $this;
+    }
+
+    /**
+     * Get trackingNumber
+     *
+     * @return string
+     */
+    public function getTrackingNumber()
+    {
+        return $this->trackingNumber;
     }
 }

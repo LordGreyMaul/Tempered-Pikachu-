@@ -17,3 +17,8 @@ To generate entities
 ```
 php vendor/bin/doctrine orm:generate-entities ./src
 ```
+
+When database entities updated:
+```
+php vendor/bin/doctrine orm:schema-tool:update --dump-sql
+```

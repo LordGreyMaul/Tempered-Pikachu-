@@ -36,7 +36,7 @@ class Router
             );
         } else
         {
-            $this->callAction('PagesController', 'pageNotFound');
+            return $this->callAction('PagesController', 'pageNotFound');
         }
         throw new \Exception('No route defined for this URI.');
     }
