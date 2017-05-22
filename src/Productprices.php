@@ -15,7 +15,7 @@ class Productprices
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Column(name="id", type="integer", precision=0, scale=0, nullable=false, unique=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
@@ -24,21 +24,21 @@ class Productprices
     /**
      * @var integer
      *
-     * @ORM\Column(name="productID", type="integer", nullable=true)
+     * @ORM\Column(name="productID", type="integer", precision=0, scale=0, nullable=true, unique=false)
      */
     private $productid;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dateFrom", type="datetime", nullable=true)
+     * @ORM\Column(name="dateFrom", type="datetime", precision=0, scale=0, nullable=true, unique=false)
      */
     private $datefrom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="productPrice", type="decimal", precision=11, scale=2, nullable=true)
+     * @ORM\Column(name="productPrice", type="decimal", precision=11, scale=2, nullable=true, unique=false)
      */
     private $productprice;
 

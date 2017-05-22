@@ -15,7 +15,7 @@ class Orderproducts
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Column(name="id", type="integer", precision=0, scale=0, nullable=false, unique=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
@@ -24,28 +24,28 @@ class Orderproducts
     /**
      * @var integer
      *
-     * @ORM\Column(name="orderID", type="integer", nullable=false)
+     * @ORM\Column(name="orderID", type="integer", precision=0, scale=0, nullable=false, unique=false)
      */
     private $orderid;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="productID", type="integer", nullable=false)
+     * @ORM\Column(name="productID", type="integer", precision=0, scale=0, nullable=false, unique=false)
      */
     private $productid;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="quantity", type="integer", nullable=true)
+     * @ORM\Column(name="quantity", type="integer", precision=0, scale=0, nullable=true, unique=false)
      */
     private $quantity;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="comments", type="string", length=255, nullable=true)
+     * @ORM\Column(name="comments", type="string", length=255, precision=0, scale=0, nullable=true, unique=false)
      */
     private $comments;
 

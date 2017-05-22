@@ -22,6 +22,7 @@ $isDevMode = true;
 
 $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode, null, null, false);
 $entityManager = EntityManager::create(Config::get('database'), $config);
+App::setEntityManager($entityManager);
 
 function view($name, $data=[])
 {

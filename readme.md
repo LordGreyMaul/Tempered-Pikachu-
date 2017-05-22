@@ -13,7 +13,7 @@ To generate mappings
 php vendor/bin/doctrine orm:convert-mapping --from-database annotation .
 ```
 
-To generate entites
+To generate entities
 ```
 php vendor/bin/doctrine orm:generate-entities ./src
 ```

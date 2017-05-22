@@ -15,7 +15,7 @@ class Orderdeliveries
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Column(name="id", type="integer", precision=0, scale=0, nullable=false, unique=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
@@ -24,21 +24,21 @@ class Orderdeliveries
     /**
      * @var integer
      *
-     * @ORM\Column(name="orderID", type="integer", nullable=true)
+     * @ORM\Column(name="orderID", type="integer", precision=0, scale=0, nullable=true, unique=false)
      */
     private $orderid;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="dateAdded", type="datetime", nullable=false)
+     * @ORM\Column(name="dateAdded", type="datetime", precision=0, scale=0, nullable=false, unique=false)
      */
     private $dateadded;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="status", type="integer", nullable=true)
+     * @ORM\Column(name="status", type="integer", precision=0, scale=0, nullable=true, unique=false)
      */
     private $status;
 

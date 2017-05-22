@@ -15,7 +15,7 @@ class Users
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Column(name="id", type="integer", precision=0, scale=0, nullable=false, unique=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
@@ -24,21 +24,21 @@ class Users
     /**
      * @var string
      *
-     * @ORM\Column(name="username", type="string", length=255, nullable=false)
+     * @ORM\Column(name="username", type="string", length=255, precision=0, scale=0, nullable=false, unique=false)
      */
     private $username;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="password", type="string", length=255, nullable=false)
+     * @ORM\Column(name="password", type="string", length=255, precision=0, scale=0, nullable=false, unique=false)
      */
     private $password;
 
     /**
      * @var integer
      *
-     * @ORM\Column(name="account_id", type="integer", nullable=false)
+     * @ORM\Column(name="account_id", type="integer", precision=0, scale=0, nullable=false, unique=false)
      */
     private $accountId;
 

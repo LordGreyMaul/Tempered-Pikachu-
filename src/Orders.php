@@ -12,6 +12,13 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Orders
 {
+    const ORDER_STATUS = [
+        'cart' => 1,
+        'pending_payment' => 2,
+        'paid' => 3,
+        'sent' =>4,
+    ];
+
     /**
      * @var integer
      *
@@ -20,6 +27,13 @@ class Orders
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="accountid", type="integer", nullable=false)
+     */
+    private $accountid;
 
     /**
      * @var string
@@ -56,16 +70,37 @@ class Orders
      */
     private $comments;
 
-
-
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set accountid
+     *
+     * @param integer $accountid
+     * @return Orders
+     */
+    public function setAccountId($accountid)
+    {
+        $this->accountid = $accountid;
+
+        return $this;
+    }
+
+    /**
+     * Get accountid
+     *
+     * @return string
+     */
+    public function getAccountId()
+    {
+        return $this->accountid;
     }
 
     /**
@@ -84,7 +119,7 @@ class Orders
     /**
      * Get total
      *
-     * @return string 
+     * @return string
      */
     public function getTotal()
     {
@@ -99,7 +134,12 @@ class Orders
      */
     public function setStatus($status)
     {
-        $this->status = $status;
+        $status = strtolower($status);
+        if (false === array_key_exists($status, self::ORDER_STATUS)) {
+            throw new \InvalidArgumentException(sprintf('"%s" is not a valid status parameter.', $status));
+        }
+
+        $this->status = self::ORDER_STATUS[$status];
 
         return $this;
     }
@@ -107,11 +147,11 @@ class Orders
     /**
      * Get status
      *
-     * @return integer 
+     * @return integer
      */
     public function getStatus()
     {
-        return $this->status;
+        return array_search($this->status, self::ORDER_STATUS);
     }
 
     /**
@@ -120,7 +160,7 @@ class Orders
      * @param \DateTime $dateadded
      * @return Orders
      */
-    public function setDateadded($dateadded)
+    public function setDateAdded($dateadded)
     {
         $this->dateadded = $dateadded;
 
@@ -130,9 +170,9 @@ class Orders
     /**
      * Get dateadded
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
-    public function getDateadded()
+    public function getDateAdded()
     {
         return $this->dateadded;
     }
@@ -153,9 +193,9 @@ class Orders
     /**
      * Get datepaid
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
-    public function getDatepaid()
+    public function getDatePaid()
     {
         return $this->datepaid;
     }
@@ -176,7 +216,7 @@ class Orders
     /**
      * Get comments
      *
-     * @return string 
+     * @return string
      */
     public function getComments()
     {

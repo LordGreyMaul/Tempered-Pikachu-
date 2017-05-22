@@ -66,7 +66,7 @@
                     <td></td>
                     <td></td>
                     <td><a href="#" class="btn btn-danger">Delete Cart</a></td>
-                    <form action="charge" method="post">
+                    <form method="post" action="charge" >
                         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                                 data-key="<?php echo \App\Core\Config::get('stripe/publishable_key'); ?>"
                                 data-description="Access for a year"

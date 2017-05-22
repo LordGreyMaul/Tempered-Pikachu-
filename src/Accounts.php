@@ -12,6 +12,10 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Accounts
 {
+    const ACCOUNT_TYPE = [
+        'customer' => 1,
+        'admin' => 2,
+    ];
     /**
      * @var integer
      *
@@ -110,7 +114,7 @@ class Accounts
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -133,7 +137,7 @@ class Accounts
     /**
      * Get adminuserid
      *
-     * @return integer 
+     * @return integer
      */
     public function getAdminuserid()
     {
@@ -156,7 +160,7 @@ class Accounts
     /**
      * Get firstname
      *
-     * @return string 
+     * @return string
      */
     public function getFirstname()
     {
@@ -179,7 +183,7 @@ class Accounts
     /**
      * Get lastname
      *
-     * @return string 
+     * @return string
      */
     public function getLastname()
     {
@@ -202,7 +206,7 @@ class Accounts
     /**
      * Get housenumber
      *
-     * @return integer 
+     * @return integer
      */
     public function getHousenumber()
     {
@@ -225,7 +229,7 @@ class Accounts
     /**
      * Get addressline1
      *
-     * @return string 
+     * @return string
      */
     public function getAddressline1()
     {
@@ -248,7 +252,7 @@ class Accounts
     /**
      * Get addressline2
      *
-     * @return string 
+     * @return string
      */
     public function getAddressline2()
     {
@@ -271,7 +275,7 @@ class Accounts
     /**
      * Get city
      *
-     * @return string 
+     * @return string
      */
     public function getCity()
     {
@@ -294,7 +298,7 @@ class Accounts
     /**
      * Get province
      *
-     * @return string 
+     * @return string
      */
     public function getProvince()
     {
@@ -317,7 +321,7 @@ class Accounts
     /**
      * Get postcode
      *
-     * @return string 
+     * @return string
      */
     public function getPostcode()
     {
@@ -340,7 +344,7 @@ class Accounts
     /**
      * Get country
      *
-     * @return string 
+     * @return string
      */
     public function getCountry()
     {
@@ -363,7 +367,7 @@ class Accounts
     /**
      * Get countrycode
      *
-     * @return string 
+     * @return string
      */
     public function getCountrycode()
     {
@@ -378,18 +382,21 @@ class Accounts
      */
     public function setType($type)
     {
-        $this->type = $type;
-
+        $type = strtolower($type);
+        if (false === array_key_exists($type, self::ACCOUNT_TYPE)) {
+            throw new \InvalidArgumentException(sprintf('"%s" is not a valid account type parameter.', $type));
+        }
+        $this->type = self::ACCOUNT_TYPE[$type];
         return $this;
     }
 
     /**
      * Get type
      *
-     * @return integer 
+     * @return integer
      */
     public function getType()
     {
-        return $this->type;
+        return array_search($this->type, self::ACCOUNT_TYPE);
     }
 }

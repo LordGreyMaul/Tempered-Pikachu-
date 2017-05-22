@@ -17,9 +17,9 @@
 </div>
 <!-- End of splash -->
 
-<form action="charge.php" method="post">
+<form method="post" action="charge" >
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<?php echo \App\Core\Config::get(['stripe/publishable_key']); ?>"
+          data-key="<?php echo \App\Core\Config::get('stripe/publishable_key'); ?>"
           data-description="Access for a year"
           data-amount="5000"
           data-locale="auto"></script>

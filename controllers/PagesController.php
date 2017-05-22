@@ -48,4 +48,9 @@ class PagesController
         $cards = Pokemon::Card()->where(['set' => $_POST['id']])->all();
         return view('singleset' , compact('cards'));
     }
+
+    public function pageNotFound()
+    {
+        return view('pageNotFound');
+    }
 }
