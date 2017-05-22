@@ -24,8 +24,7 @@
                         <input type="text" class="form-control" id="title" placeholder="Blog Title">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Blog</label>
-                        <textarea class="form-control" rows="3"></textarea>
+                        <div id="summernote">Description goes here</div>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputFile">Featured Image</label>
