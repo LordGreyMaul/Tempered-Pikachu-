@@ -21,10 +21,15 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="/resources/css/bootstrap.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.css" rel="stylesheet">
+
 
     <!-- Custom CSS -->
     <link href="/resources/css/simple-sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="/resources/css/site.css" type="text/css">
+
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
