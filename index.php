@@ -7,8 +7,27 @@ use App\Core\App;
 use App\Core\Config;
 use App\Core\Router;
 use App\Core\Request;
-//var_dump(App::getEntityManager());
+
+//$em = App::getEntityManager();
+//$qb = $em->createQueryBuilder();
+//
+//$qb->select('p')
+//    ->from('OrderProducts', 'p')
+//    ->where('p.productid = :productId')
+//    ->andWhere('p.orderid = :orderId')
+//    ->setParameter('productId', 1)
+//    ->setParameter('orderId', 1);
+////echo $qb->getDQL();
+//$query = $qb->getQuery();
+
+//var_dump($query->getResult());
 //die();
+/* @var OrderProducts $orderProducts */
+//$orderProducts = $query->execute();
+//var_dump($orderProducts);
+//die();
+
+
 \Stripe\Stripe::setApiKey(Config::get('stripe/secret_key'));
 
 Router::load('routes.php')

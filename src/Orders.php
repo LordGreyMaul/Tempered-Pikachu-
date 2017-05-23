@@ -222,4 +222,9 @@ class Orders
     {
         return $this->comments;
     }
+
+    public function getOrderStatus()
+    {
+        return array_search($this->status, self::ORDER_STATUS);
+    }
 }

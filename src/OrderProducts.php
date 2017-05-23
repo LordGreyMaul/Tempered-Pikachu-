@@ -5,12 +5,12 @@
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Orderproducts
+ * OrderProducts
  *
  * @ORM\Table(name="orderProducts", uniqueConstraints={@ORM\UniqueConstraint(name="UNIQUE_ORDER", columns={"orderID", "productID"})})
  * @ORM\Entity
  */
-class Orderproducts
+class OrderProducts
 {
     /**
      * @var integer
@@ -65,7 +65,7 @@ class Orderproducts
      * Set orderid
      *
      * @param integer $orderid
-     * @return Orderproducts
+     * @return OrderProducts
      */
     public function setOrderid($orderid)
     {
@@ -88,7 +88,7 @@ class Orderproducts
      * Set productid
      *
      * @param integer $productid
-     * @return Orderproducts
+     * @return OrderProducts
      */
     public function setProductid($productid)
     {
@@ -111,7 +111,7 @@ class Orderproducts
      * Set quantity
      *
      * @param integer $quantity
-     * @return Orderproducts
+     * @return OrderProducts
      */
     public function setQuantity($quantity)
     {
@@ -134,7 +134,7 @@ class Orderproducts
      * Set comments
      *
      * @param string $comments
-     * @return Orderproducts
+     * @return OrderProducts
      */
     public function setComments($comments)
     {
